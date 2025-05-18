@@ -15,9 +15,9 @@ export function LoginForm({
           <form className="p-6 md:p-8">
             <div className="flex flex-col gap-6">
               <div className="flex flex-col items-center text-center">
-                <h1 className="text-2xl font-bold">Welcome back</h1>
+                <h1 className="text-2xl font-bold">Bem-Vindo</h1>
                 <p className="text-balance text-muted-foreground">
-                  Login to your Acme Inc account
+                  Realize o login na sua conta Safe-Pass!
                 </p>
               </div>
               <div className="grid gap-2">
@@ -25,18 +25,18 @@ export function LoginForm({
                 <Input
                   id="email"
                   type="email"
-                  placeholder="m@example.com"
+                  placeholder="email@example.com"
                   required
                 />
               </div>
               <div className="grid gap-2">
                 <div className="flex items-center">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password">Senha</Label>
                   <a
                     href="#"
                     className="ml-auto text-sm underline-offset-2 hover:underline"
                   >
-                    Forgot your password?
+                    Esqueceu sua senha ?
                   </a>
                 </div>
                 <Input id="password" type="password" required />
@@ -45,8 +45,8 @@ export function LoginForm({
                 Login
               </Button>
               <div className="relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t after:border-border">
-                <span className="relative z-10 bg-background px-2 text-muted-foreground">
-                  Or continue with
+                <span className="relative z-10 bg-neutral-900 px-2 text-muted-foreground">
+                  Ou continue com
                 </span>
               </div>
               <div className="grid grid-cols-3 gap-4">
@@ -79,25 +79,25 @@ export function LoginForm({
                 </Button>
               </div>
               <div className="text-center text-sm">
-                Don&apos;t have an account?{" "}
+                Não tem conta ?{" "}
                 <a href="#" className="underline underline-offset-4">
-                  Sign up
+                  Cadastre-se
                 </a>
               </div>
             </div>
           </form>
-          <div className="relative hidden bg-muted md:block">
+          <div className="relative hidden bg-neutral-800 md:block mr-5 rounded-md ">
             <img
-              src="/placeholder.svg"
-              alt="Image"
-              className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+              src="/images/logo_safepass_1.png"
+              alt="Logo do Sistema"
+              className="absolute inset-0 h-full w-full object-cover "
             />
           </div>
         </CardContent>
       </Card>
       <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 hover:[&_a]:text-primary">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
+       Ao clicar aqui, você concordo com nossos <a href="#">Termos de Serviço</a>{" "}
+        e <a href="#">Políticas de Privacidade</a>.
       </div>
     </div>
   )
