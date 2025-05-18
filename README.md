@@ -48,6 +48,10 @@ Instalar o shadcn/ui
 ```
 npx shadcn@latest init
 ```
+Instalar os componentes do shadcn/ui
+```
+npx shadcn@latest add button
+```
 Instalar a dependência Yup para validar o formulário. O react-hook-form para gerenciar o formulário. O resolvers para conectar react-hook-form com Yup.
 ```
 npm install @hookform/resolvers yup react-hook-form
